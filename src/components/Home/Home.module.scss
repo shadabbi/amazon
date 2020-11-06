@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  & .homeContainer {
+    & .homeImg {
+      width: 100%;
+      z-index: -1;
+      margin-bottom: -150px;
+      mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+      );
+    }
+
+    .homeRow {
+      display: flex;
+      z-index: 1;
+      margin: auto;
+    }
+  }
+}
